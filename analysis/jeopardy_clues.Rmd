@@ -1,0 +1,16 @@
+---
+title: "Jeopardy Clues"
+author: "Stephen Kaluzny"
+date: "7/30/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Data
+Read the data from the TIBCO Seattle Data Depot.
+```{r read_data}
+d <- readr::read_tsv("http://sea-data.na.tibco.com/data/text/jeopardy_clues.tsv")
+```

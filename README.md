@@ -13,3 +13,8 @@ Variables include:
 - question - the correct response
 - air_date
 - notes -- specifies if it was a tournament match, etc.
+
+The R script file `scripts/get_data.R` will download the zipped data
+from Github, read it into R and then save the R object (a tibble) under
+`tools::R_user_dir("jeopardy_clue_dataset", "data")` for use in
+subsequent R sessions.

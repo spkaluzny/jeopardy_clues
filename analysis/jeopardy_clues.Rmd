@@ -1,7 +1,7 @@
 ---
 title: "Jeopardy Clues"
 author: "Stephen Kaluzny"
-date: "7/30/2019"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
 output: html_document
 ---
 
@@ -10,7 +10,10 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ## Data
-Read the data from the TIBCO Seattle Data Depot.
-```{r read_data}
-d <- readr::read_tsv("http://sea-data.na.tibco.com/data/text/jeopardy_clues.tsv")
+Read the previously downloaded Jeopardy clues data:
+```{r load_data}
+jdata_file <- file.path(tools::R_user_dir("jeopardy_clue_dataset", "data"),
+  "jdata.rds")
+stopifnot(file.exists(jdata_file))  # run get_data.R to get the data
+jdata <- readRDS(jdata_file)
 ```

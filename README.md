@@ -1,4 +1,4 @@
-Answers (clues) and questions from 35 seasons of the game show Jeopardy.
+Answers (clues) and questions from 36 seasons of the game show Jeopardy.
 The data was announced on
 [r/datatsets](https://old.reddit.com/r/datasets/comments/cj3ipd/jeopardy_dataset_with_349000_clues)
 and downloaded from
